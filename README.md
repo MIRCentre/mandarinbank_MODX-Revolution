@@ -1,8 +1,9 @@
-# mandarinbank_ModXRevo
+## Установка
 
-1. Авторизоваться в **%домен%:%port%/manager/index.php**
+1. Авторизовываемся в **%домен%:%port%/manager/index.php**
 2. В левой части админки Элементы - Сниппеты, на Сниппеты правой кнопкой мыши - новый сниппет
 3. Имя - mandarin, описание - Платёжная система, код ниже (merchant-id и secret вписываем свои, кавычки аккуратно оставляем):
+
 `<?php
 $output = '';
 $mid="merchant-id";
@@ -11,6 +12,7 @@ $msec='secret';
 require_once $modx->getOption('core_path')."components/mandarin.php";
 return $output;
 ?>`
+
 4. Переходим в Ресурсы - Спасибо! (12)
 5. В тексте ресурса в самом начале добавляем одну строку: `[[!mandarin]]`
 6. Сохраняем ресурс "Спасибо!"
