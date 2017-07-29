@@ -1,6 +1,6 @@
 ## Установка
 
-1. Авторизовываемся в **%протокол%://%домен%:%port%/manager/index.php**
+1. Авторизовываемся в **protocol://domain:port/manager/index.php**
 2. В левой части админки Элементы - Сниппеты, на Сниппеты правой кнопкой мыши - новый сниппет
 3. Имя - mandarin, описание - Платёжная система, код ниже (merchant-id и secret вписываем свои, кавычки аккуратно оставляем):
 ```php
@@ -20,5 +20,5 @@ return $output;
 8. Нажимаем на гамбургер меню(четыре полоски горизонтальных, справа от кнопки "Удалить") - "Настройки"
 9. Выбрать "Методы оплаты", Добавить, название "MandarinBank", значение "mandarin", "Сохранить"
 10. В системе MandarinPay указываем
-- callbackURL - **%домен%/payment-mandarin.php**
-- returnURL - **%домен%/spasibo.html**
+- callbackURL - **protocol://domain:port/payment-mandarin.php**
+- returnURL - **protocol://domain:port/spasibo.html**
